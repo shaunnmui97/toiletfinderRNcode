@@ -24,7 +24,7 @@ page_soup = page_soup.body
 #csv
 filename = "northwest.csv"
 f = open(filename, "w")
-headers = "Place, Name, Address\n"
+headers = "Place,Name,Address\n"
 f.write(headers)
 
 #traversing the data
@@ -39,6 +39,6 @@ for container in containers:
     place = container.contents[1].text
     name = container.contents[3].text
     address = container.contents[5].text
-    f.write(place + "," + name.replace(",","|") + "," + address.replace(",","|")+ "\n")
+    f.write(place + "," + name.replace(","," ") + "," + address.replace(","," ")+ "\n")
 
 f.close()
