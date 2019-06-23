@@ -3,6 +3,10 @@ package com.toiletfinder;
 import com.facebook.react.ReactActivity;
 
 public class MainActivity extends ReactActivity {
+    //private FirebaseDatabase firebaseDatabase = FirebaseDatabase.getInstance();
+    //private DatabaseReference mRootReference = firebaseDatabase.getReference();
+    //private DatabaseRegerence mChildReference = mRootReference.child("");
+
 
     /**
      * Returns the name of the main component registered from JavaScript.
